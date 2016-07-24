@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "npm-run-all --parallel  open:src lint:watch",
+    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "open:src": "babel-node server.js",
     "lint": "node_modules/.bin/esw webpack.config.* src",
     "lint:watch": "npm run lint -- --watch"
