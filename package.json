@@ -19,8 +19,8 @@
     "babel-polyfill": "6.8.0",
     "bootstrap": "3.3.6",
     "jquery": "2.2.3",
-    "react": "15.0.2",
-    "react-dom": "15.0.2",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
     "react-router-redux": "4.0.4",
@@ -67,10 +67,10 @@
     "webpack-hot-middleware": "2.10.0"
   },
   "standard": {
-  "ignore": [
-    "server.js",
-    "webpack.config.js",
-    "webpack.production.config.js"
-  ]
-}
+    "ignore": [
+      "server.js",
+      "webpack.config.js",
+      "webpack.production.config.js"
+    ]
+  }
 }
