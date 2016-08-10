@@ -8,10 +8,10 @@
   },
   "scripts": {
     "dev": "npm-run-all --parallel  open:src lint:watch",
-    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors lint:watch",
     "open:src": "babel-node server.js",
-    "lint": "node_modules/.bin/esw webpack.config.* src",
-    "lint:watch": "npm run lint -- --watch"
+    "lint": "standard",
+    "lint:watch": "npm run lint"
   },
   "author": "Anil Kumar",
   "license": "MIT",
@@ -59,10 +59,18 @@
     "redux-immutable-state-invariant": "1.2.3",
     "redux-mock-store": "1.0.2",
     "rimraf": "2.5.2",
+    "standard": "^7.1.2",
     "style-loader": "0.13.1",
     "url-loader": "0.5.7",
     "webpack": "1.13.0",
     "webpack-dev-middleware": "1.6.1",
     "webpack-hot-middleware": "2.10.0"
-  }
+  },
+  "standard": {
+  "ignore": [
+    "server.js",
+    "webpack.config.js",
+    "webpack.production.config.js"
+  ]
+}
 }
