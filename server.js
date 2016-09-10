@@ -10,12 +10,25 @@ const compiler = webpack(config);
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
-  publicPath: config.output.publicPath
+  publicPath: config.output.publicPath,
+  historyApiFallback: false,
+  compress: true,
+  proxy: {
+    "*": "http://www.desalsa.io:8000",
+  },
+  headers: { "X-Custom-Header": "yes" },
+  stats: {  colors: true,
+      hash: false,
+      timings: true,
+      chunks: false,
+      chunkModules: false,
+      modules: false }
 }));
 
 app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('*', function(req, res) {
+
   res.sendFile(path.join( __dirname, './index.html'));
 });
 

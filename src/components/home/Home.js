@@ -6,7 +6,7 @@ class Home extends Component {
       <div>
         <h1>Reactjs, Redux, Webpack and babel are the perfect ingredients for your reciepe :) </h1>
       </div>
-		)
+)
   }
 }
 
