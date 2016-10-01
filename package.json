@@ -7,8 +7,8 @@
     "url": "https://github.com/bobony/reactjs-redux-starter-kit"
   },
   "scripts": {
-    "dev": "npm-run-all --parallel  open:src lint:watch",
-    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors lint:watch",
+    "dev": "npm-run-all --parallel  open:src",
+    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "open:src": "babel-node server.js",
     "lint": "standard",
     "lint:watch": "npm run lint"
@@ -19,12 +19,12 @@
     "babel-polyfill": "^6.13.0",
     "bootstrap": "3.3.6",
     "jquery": "2.2.3",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "react-redux": "4.4.5",
-    "react-router": "^2.7.0",
-    "react-router-redux": "^4.0.5",
-    "redux": "3.5.2",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.6",
+    "redux": "^3.6.0",
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
