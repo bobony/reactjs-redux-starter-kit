@@ -13,10 +13,6 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath,
   historyApiFallback: false,
   compress: true,
-  proxy: {
-    "*": "http://www.desalsa.io:8000",
-  },
-  headers: { "X-Custom-Header": "yes" },
   stats: {  colors: true,
       hash: false,
       timings: true,

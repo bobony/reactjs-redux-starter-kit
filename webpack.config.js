@@ -21,7 +21,11 @@ export default {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new webpack.ProvidePlugin({ // required for calling any thriparty plugins
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ],
   module: {
     loaders: [

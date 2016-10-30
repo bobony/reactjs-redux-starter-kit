@@ -1,7 +1,6 @@
 import { combineReducers } from 'redux'
-
+import repos from './RepoReducer'
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  repos
 })
-
 export default rootReducer
