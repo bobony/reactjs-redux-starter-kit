@@ -11,7 +11,7 @@ Reactjs redux starter kit uses **standard** as a jslinter. Please free to use ot
 5. For production build use **$npm run build**
 
 # Example App
-Coming Soon..
+This reactjs and redux starter kit comes with a simple application where you can search the github repos
 
 # Contribution:
 If you have any issues please report.
