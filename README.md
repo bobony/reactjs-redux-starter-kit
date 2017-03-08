@@ -3,12 +3,13 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 Reactjs redux starter kit is a very simple and easy to use redux starter kit for reactjs nothing more, nothing less just what you want to getting started.
 Reactjs redux starter kit uses **standard** as a jslinter. Please free to use other javascript linters.
-Webpack 2 with Example 
-Upto date all the time :)
-*ReactJs
-*Webpack 2
-*Redux
-*React-router
+Webpack 2 with Example
+**Upto date all the time :)**
+* ReactJs
+* Webpack 2
+* Redux
+* React-router
+* and many more useful packages..
 
 # Installing and running the setup
 1. **clone the repository:** https://github.com/bobony/reactjs-redux-starter-kit.git
