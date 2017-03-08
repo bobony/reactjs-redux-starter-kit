@@ -13,7 +13,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath,
   historyApiFallback: false,
   compress: true,
-  stats: {  colors: true,
+  stats: { colors: true,
       hash: false,
       timings: true,
       chunks: false,
