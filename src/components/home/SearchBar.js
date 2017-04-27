@@ -23,7 +23,7 @@ class SearchBar extends Component {
         <button style={{marginLeft: 20}} type='submit' onClick={this.handleSubmit} className='btn btn-primary'>Submit</button>
         <span id='helpBlock' className='help-block'>Example: web frameworks, frontend frameworks</span>
       </div>
-  )
+    )
   }
 }
 

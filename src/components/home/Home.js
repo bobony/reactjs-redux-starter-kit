@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../../actions'
+import SearchBar from './SearchBar'
 require('bootstrap')
 require('../../../node_modules/bootstrap/dist/css/bootstrap.min.css')
-import SearchBar from './SearchBar'
 
 const StringTruncate = (string) => {
   if (string.length > 180) {
@@ -43,11 +43,11 @@ class Home extends Component {
           )
         }) : <div><h3>No Items to display, enter your query in Search Field</h3></div>}
       </div>
-)
+    )
   }
 }
 function mapStateToProps (state) {
   return { repos: state.repos.data || []
-          }
+  }
 }
 export default connect(mapStateToProps, actions)(Home)
